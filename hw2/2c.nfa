@@ -1,0 +1,25 @@
+alphabet: {a,b}
+start: Q0
+accepting: {Q0, Q10, Qa3, Qa5, Qa6, Qa8}
+
+Q0 (a -> Q1)(b -> Q5)(_ -> Qa0)
+Q1 (a -> Q2)(b -> Q10)
+Q2 (a -> Q3)(b -> Q8)
+Q3 (a -> Q4)(b -> Q7)
+Q4 (a -> Q0)(b -> Q6)
+Q5 (a -> Q9)(b -> Q6)
+Q6 (a -> Q9)(b -> Q7)
+Q7 (a -> Q9)(b -> Q8)
+Q8 (a -> Q9)(b -> Q10)
+Q9 (a -> Q9)(b -> Q9)
+Q10 (a-> Q9)(b-> Q5)(_ -> Qa0)
+Qa0 (a -> Qa1)(b -> Qa0)
+Qa1 (a -> Qa2)(b -> Qa9)
+Qa2 (a -> Qa3)(b -> Qa9)
+Qa3 (a -> Qa4)(b -> Qa0)
+Qa4 (a -> Qa5)(b -> Qa9)
+Qa5 (a -> Qa6)(b -> Qa0)
+Qa6 (a -> Qa7)(b -> Qa0)
+Qa7 (a -> Qa8)(b -> Qa9)
+Qa8 (a -> Qa8)(b -> Qa0)
+Qa9 (a -> Qa9)(b -> Qa9)

@@ -1,6 +1,6 @@
 alphabet: {a,b}
 start: Q0
-accepting: {Q5, Q6, Q9, Q10}
+accepting: {Q0, Q5, Q6, Q9, Q12, Q13}
 
 Q0 (a -> Q1)(a -> Q10)(b -> Q6)
 Q1 (a -> Q2)(b -> Q1)
@@ -15,3 +15,4 @@ Q9 (a -> Q5)(b -> Q5)
 Q10 (a -> Q11)
 Q11 (a -> Q12)
 Q12 (b -> Q13)
+Q13 (a -> Q10)(b -> Q13)
